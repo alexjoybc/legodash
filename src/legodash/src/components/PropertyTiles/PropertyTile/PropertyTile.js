@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function PropertyTile({ property: { key, value, icon } }) {
   return (
@@ -10,3 +11,11 @@ export default function PropertyTile({ property: { key, value, icon } }) {
     </div>
   );
 }
+
+PropertyTile.propTypes = {
+    property: PropTypes.shape({
+        key: PropTypes.string.isRequired,
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool])
+    }).isRequired
+  };
+  

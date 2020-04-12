@@ -7,8 +7,6 @@ function PropertyTiles({ properties }) {
     return <div>empty</div>;
   }
 
-  console.log({properties});
-
   return (
     <div class="card-deck">
       {properties.map(property => (
