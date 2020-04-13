@@ -5,13 +5,13 @@ import PropertyTable from "../../../../components/PropertyTable/PropertyTable.js
 import Preview from "../../../../components/Preview/Preview.js";
 
 export default function SetCard({
-  set: { id, name, productCode, properties, image }
+  set: { id, name, productCode, properties, images }
 }) {
   return (
     <div class="card p-2">
       <div class="row mb-2">
         <div class="col-md-5">
-          <Preview image={image}></Preview>
+          <Preview images={images}></Preview>
         </div>
         <div class="col-md-7">
           <div class="card-body">
