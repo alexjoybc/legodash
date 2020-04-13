@@ -1,24 +1,30 @@
-import React from 'react';
+import React from "react";
 
-import Preview from './Preview';
+import Preview from "./Preview";
 
 export default {
   component: Preview,
-  title: 'Preview',
+  title: "Preview",
   // Our exports that end in "Data" are not stories.
-  decorators: [story => <div style={{ padding: '3rem' }}>{story()}</div>],
-  excludeStories: /.*Data$/,
+  decorators: [
+    story => (
+      <div style={{ padding: "3rem" }}>
+        <div class="card" style={{width: '50rem'}}>{story()}</div>
+      </div>
+    )
+  ],
+  excludeStories: /.*Data$/
 };
 
 export const imageData = {
-  src: 'https://www.lego.com/cdn/cs/set/assets/blt8f957cbc4a955eea/60146.jpg',
-  alt: 'product 60146'
+  src: "https://www.lego.com/cdn/cs/set/assets/blt8f957cbc4a955eea/60146.jpg",
+  alt: "product 60146"
 };
 
 export const notAnImageData = {
-    src: '',
-    alt: 'product 60146'
-  };
+  src: "",
+  alt: "product 60146"
+};
 
 export const Default = () => <Preview image={{ ...imageData }} />;
 
