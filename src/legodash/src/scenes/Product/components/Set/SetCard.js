@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import PropertyTiles from "../../../../components/PropertyTiles/PropertyTiles.js";
 import PropertyTable from "../../../../components/PropertyTable/PropertyTable.js";
-import Preview from "../../../../components/Preview/Preview.js";
+import Preview from "../../../../components/Preview";
 
 export default function SetCard({
   set: { id, name, productCode, properties, images }

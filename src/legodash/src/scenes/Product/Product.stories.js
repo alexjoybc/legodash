@@ -5,7 +5,7 @@ import Product from './index';
 export default {
   component: Product,
   title: 'Product',
-  decorators: [story => <div style={{ padding: '3rem' }}>{story()}</div>],
+  decorators: [story => <div style={{ padding: '0.2rem' }}>{story()}</div>],
   excludeStories: /.*Data$/,
 };
 
