@@ -1,12 +1,8 @@
 import React from "react";
-import PropertyTable from '../../../../../../components/PropertyTable/PropertyTable';
+import PropertyTable from "../../../../../components/PropertyTable/PropertyTable";
 
 export default function SetCard({ description: { properties } }) {
+  console.log({ properties });
 
-    console.log({properties});
-
-  return (
-      <PropertyTable properties={properties}></PropertyTable>
-  );
+  return <PropertyTable properties={properties}></PropertyTable>;
 }
-

@@ -6,7 +6,7 @@ import Tab from "react-bootstrap/Tab";
 
 import { getProduct } from "./services/ProductApi";
 import SetCard from "./components/Set/SetCard";
-import BrickList from "./components/BrickList";
+import BrickList from "./components/Brick/BrickList";
 
 export default function Product({ search: { productCode } }) {
   let result = getProduct({ productCode });
